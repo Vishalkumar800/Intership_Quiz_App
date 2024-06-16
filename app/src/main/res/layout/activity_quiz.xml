@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_13sdp"
+    tools:context=".QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/question_indiactor_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Question 7/20"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@+id/timer_indicator_textView"
+            android:src="@drawable/baseline_access_time_24"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:id="@+id/timer_indicator_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="5:30"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/question_progress_indiactor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="100"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:elevation="@dimen/_2sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_14sdp">
+
+
+            <TextView
+                android:id="@+id/question_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:text="What is Android Os ?"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:backgroundTint="@color/blue"
+                android:layout_marginVertical="@dimen/_7sdp"
+                android:background="@drawable/rounded_corner"/>
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:backgroundTint="@color/gray"
+               android:fontFamily="@font/poppins_medium"
+                android:gravity="center_vertical"
+                android:paddingVertical="@dimen/_12sdp"
+                android:text="Ans A"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_vertical"
+                android:paddingVertical="@dimen/_12sdp"
+                android:text="Ans B"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ans C"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:backgroundTint="@color/gray"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ans D"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/backButton"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="Back"
+                    android:textSize="@dimen/_14sdp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/NextButton"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="Next"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="@dimen/_14sdp"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

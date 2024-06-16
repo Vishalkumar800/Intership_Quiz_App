@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuizAppIntership" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/orange</item>
+
+    </style>
+
+    <style name="Theme.QuizAppIntership" parent="Base.Theme.QuizAppIntership" />
+</resources>

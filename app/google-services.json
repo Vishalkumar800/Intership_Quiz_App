@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "876256716399",
+    "project_id": "quiz-app-intership",
+    "storage_bucket": "quiz-app-intership.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876256716399:android:ff3d0051d08ea3a10c8f9a",
+        "android_client_info": {
+          "package_name": "com.rach.quizappintership"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvAodQDk16UV18828ul_Beq0c_xU_s1eU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

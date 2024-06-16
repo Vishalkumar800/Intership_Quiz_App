@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    android:elevation="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_18sdp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/quiz_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quiz_subtitle_text"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="All About Android Os"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/baseline_access_time_24"
+                android:tint="@color/orange"
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 min"
+                android:textColor="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

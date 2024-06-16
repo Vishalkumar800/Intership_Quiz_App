@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/_14sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/score_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congrats! You have passed"
+        android:gravity="center"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/score_progress_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:trackColor="@color/gray"
+            android:progress="70"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:indicatorSize="@dimen/_75sdp"
+            app:trackCornerRadius="@dimen/_14sdp"
+            app:trackThickness="@dimen/_6sdp"/>
+
+
+        <TextView
+            android:id="@+id/score_progress_text_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_15sdp"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/score_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6 out of 10 questions are correct"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/finish_Quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:layout_margin="@dimen/_8sdp"
+        />
+
+</LinearLayout>
